@@ -1,0 +1,52 @@
+// In order to get a sticky footer:
+// Create a grid of four rows & force html to take up all page height.
+html { height: 100%; }
+body {
+    // ====================
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+    footer {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    // ====================
+
+    padding: 40px 77px;
+    @include breakpoint-max( sm ) {
+        padding: 24px;
+    }
+}
+
+main.page {
+    padding: 40px 0;
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 120px;
+        align-items: center;
+
+        @include breakpoint-max( sm ) {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 60px;
+        }
+
+        img { 
+            max-width: 75%;
+            justify-self: center;
+        }
+
+        .content {
+            // max-width: 100%;
+            // @include breakpoint( md ) { max-width: 100%; }
+            // @include breakpoint( lg ) { max-width: 50%; }
+            h1 { margin-bottom: 36px; }
+            p { margin-bottom: 64px; max-width: 75%; }
+        }
+    }
+}

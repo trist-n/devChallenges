@@ -1,0 +1,13 @@
+// Base
+@import 'base/reset';
+@import 'base/breakpoints';
+@import 'base/colors';
+@import 'base/typography';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+
+// Pages
+@import 'pages/404';

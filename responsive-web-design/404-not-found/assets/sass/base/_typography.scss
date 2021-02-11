@@ -1,0 +1,46 @@
+// Fonts Imports
+@font-face {
+    font-family: 'Iconsolata';
+    src: url("../fonts/Inconsolata-Bold.ttf");
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: 'SpaceMono Regular';
+    src: url("../fonts/SpaceMono-Regular.ttf");
+}
+@font-face {
+    font-family: 'SpaceMono Bold';
+    src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SpaceMono Bold';
+    letter-spacing: -0.035em;
+    color: $gray-1;
+}
+h1 {
+    font-size: 64px;
+    line-height: 95px;
+    @include breakpoint-max( sm ) {
+        font-size: 48px;
+        line-height: 71px;
+    }
+}
+
+
+// Paragraphs defaults
+p {
+    font-family: 'SpaceMono Regular';
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: $gray-2;
+    @include breakpoint-max( sm ) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

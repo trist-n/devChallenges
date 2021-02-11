@@ -1,0 +1,18 @@
+a.btn {
+    display: inline-block;
+    padding: 24px 44px;
+    font-family: 'SpaceMono Bold';
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $gray-1;
+    text-decoration: none;
+    transition: all, 0.5s;
+    
+    &:hover {
+        background-color: rgba($gray-1, 0.25);
+        color: $gray-1;
+    }
+}

@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Iconsolata";
+  src: url("../fonts/Inconsolata-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SpaceMono Regular";
+  src: url("../fonts/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: "SpaceMono Bold";
+  src: url("../fonts/SpaceMono-Bold.ttf");
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "SpaceMono Bold";
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 95px;
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+    line-height: 71px;
+  }
+}
+
+p {
+  font-family: "SpaceMono Regular";
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+header {
+  padding-bottom: 40px;
+}
+header p {
+  font-family: "Iconsolata";
+  font-size: 24px;
+  letter-spacing: -0.08em;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+footer {
+  padding-top: 40px;
+}
+footer p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #333333;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 24px 44px;
+  font-family: "SpaceMono Bold";
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #333333;
+  text-decoration: none;
+  transition: all, 0.5s;
+}
+a.btn:hover {
+  background-color: rgba(51, 51, 51, 0.25);
+  color: #333333;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 40px 77px;
+}
+body footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+@media screen and (max-width: 991px) {
+  body {
+    padding: 24px;
+  }
+}
+
+main.page {
+  padding: 40px 0;
+}
+main.page .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 120px;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  main.page .container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 60px;
+  }
+}
+main.page .container img {
+  max-width: 75%;
+  justify-self: center;
+}
+main.page .container .content h1 {
+  margin-bottom: 36px;
+}
+main.page .container .content p {
+  margin-bottom: 64px;
+  max-width: 75%;
+}
+
+/*# sourceMappingURL=main.css.map */
