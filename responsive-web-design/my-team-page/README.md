@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://my-team-page-psi.vercel.app">
+    <a href="https://my-team-page.trist-n.vercel.app">
       Demo
     </a>
     <span> | </span>
