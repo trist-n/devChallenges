@@ -1,0 +1,21 @@
+body {
+  background-color: $bg-color;
+}
+
+main.team-page {
+  margin: 96px 0;
+  
+  .team-cards {
+    display: grid;
+    padding: 0 16px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    @include breakpoint(md) {
+      // padding: 0;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 90px;
+    }
+    // row-gap: 120px;
+    max-width: 100%;
+  }
+}

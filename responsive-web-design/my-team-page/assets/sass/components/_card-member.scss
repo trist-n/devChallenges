@@ -1,0 +1,45 @@
+.card-member {
+  position: relative;
+  transition: all, 0.5s;
+
+  @include breakpoint-max(sm) {
+    &:nth-child(2n + 2) {
+      margin-top: 100px;
+    }
+  }
+  @include breakpoint(md) {
+    &:nth-child(3n + 2) {
+      margin-top: 100px;
+    }
+  }
+
+  img.card-member-image {
+    max-width: 90%;
+  }
+  span.card-member-role {
+    font-family: "PTSerif";
+    font-size: 12px;
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  h6 {
+    margin-top: 15px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    filter: saturate(1.5);
+    @include breakpoint(md) {
+      transform: scale(1.15);
+    }
+  }
+}

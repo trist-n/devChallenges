@@ -1,0 +1,81 @@
+// Fonts Imports
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("../fonts/PTSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("../fonts/PTSerif-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //   font-family: "PTSerif bold";
+  letter-spacing: -0.035em;
+  color: $black;
+}
+h1 {
+  font-family: "PTSerif";
+  font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: -0.045em;
+
+  //   @include breakpoint-max(sm) {
+  //     font-size: 48px;
+  //     line-height: 71px;
+  //   }
+}
+h6 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+// Paragraphs defaults
+p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: $black;
+
+  //   @include breakpoint-max(sm) {
+  //     font-size: 18px;
+  //     line-height: 27px;
+  //   }
+}
