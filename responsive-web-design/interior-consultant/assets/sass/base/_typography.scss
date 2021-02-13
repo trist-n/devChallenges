@@ -1,0 +1,102 @@
+// Fonts Imports
+/*
+Crimson-pro: 200-exta light
+*/
+// --------------------
+// Montserrat
+// --------------------
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+// --------------------
+// Lora
+// --------------------
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+// --------------------
+// Crimson-pro
+// --------------------
+@font-face {
+  font-family: "Crimson-pro";
+  src: url("../fonts/crimson-pro/CrimsonPro-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //   font-family: "PTSerif bold";
+  letter-spacing: -0.035em;
+  color: $white;
+}
+h1 {
+  font-family: "Lora";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+
+
+    @include breakpoint-max(sm) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+}
+h6 {
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+}
+
+// Paragraphs defaults
+p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: $white;
+
+
+    @include breakpoint-max(sm) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+}

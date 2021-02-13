@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+/*
+Crimson-pro: 200-exta light
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Crimson-pro";
+  src: url("../fonts/crimson-pro/CrimsonPro-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: "Lora";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0em;
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+h6 {
+  font-family: Lora;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+footer {
+  padding-top: 152px;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 8px 16px 24px 16px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+}
+@media screen and (max-width: 991px) {
+  footer p {
+    border-top: 1px solid #A9A9A9;
+  }
+}
+footer p a {
+  color: #A9A9A9;
+  transition: all, 0.5s;
+}
+footer p a:hover {
+  color: rgba(130, 130, 130, 0.25);
+}
+
+header {
+  padding-top: 42px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all, 0.5s;
+}
+header nav a:hover {
+  color: #828282;
+}
+header nav a.logo {
+  font-family: "Crimson-pro";
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  padding: 8px;
+  border: 1px solid #FFFFFF;
+}
+header nav a.logo:hover {
+  border-color: #828282;
+}
+header nav ul.menu li {
+  display: inline-block;
+  margin-right: 86px;
+}
+header nav ul.menu li:last-child {
+  margin-right: 0;
+}
+header nav ul.menu li a {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+header nav ul.menu li a.active {
+  font-weight: 700;
+}
+header nav ul.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100vw;
+  z-index: 10;
+  padding: 0 16px;
+  background-color: #181719;
+  transition: all, 0.4s;
+}
+header nav ul.menu li {
+  display: block;
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+header nav button.responsive-menu {
+  display: block;
+  z-index: 15;
+  background: none;
+  border: none;
+}
+header nav button.responsive-menu svg {
+  height: 24px;
+  width: 24px;
+  fill: #FFFFFF;
+}
+header nav button.responsive-menu svg.open-menu-icon {
+  display: block;
+}
+header nav button.responsive-menu svg.close-menu-icon {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header nav ul.menu {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+  header nav ul.menu li {
+    display: inline-block;
+    margin-right: 86px;
+    margin-bottom: 0;
+  }
+  header nav ul.menu li:last-child {
+    margin-right: 0;
+  }
+  header nav button.responsive-menu {
+    display: none;
+  }
+}
+header nav.is-opened button.responsive-menu svg.open-menu-icon {
+  display: none;
+}
+header nav.is-opened button.responsive-menu svg.close-menu-icon {
+  display: block;
+}
+header nav.is-opened ul.menu {
+  /*transform: translateX(0);*/
+  right: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #181719;
+}
+body footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+main {
+  padding-top: 38px;
+}
+@media screen and (min-width: 992px) {
+  main {
+    padding-top: 170px;
+  }
+}
+main a {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all, 0.5s;
+}
+main a span.icon {
+  height: 22px;
+  margin-left: 15px;
+  transition: all, 0.25s;
+}
+main a span.icon svg {
+  height: 22px;
+  width: 22px;
+  fill: #FFFFFF;
+}
+main a:hover {
+  color: #828282;
+}
+main a:hover span.icon {
+  margin-left: 25px;
+}
+main a:hover span.icon svg {
+  fill: #828282;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 37px;
+}
+@media screen and (min-width: 992px) {
+  main .container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+}
+main .page-hero h1 {
+  margin-bottom: 40px;
+}
+main .page-hero p {
+  margin-bottom: 48px;
+}
+main article {
+  position: relative;
+  max-width: 737px;
+}
+main article img.article-cover {
+  width: 100%;
+  max-width: 737px;
+}
+main article .article-card {
+  position: absolute;
+  width: 410px;
+  padding: 18px 0 32px 26px;
+  background-color: #181719;
+  z-index: 1;
+  bottom: -102px;
+  right: 11px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 992px) {
+  main article .article-card {
+    right: 32px;
+    box-shadow: none;
+  }
+}
+main article .article-card .article-card-profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+main article .article-card .article-card-profile img.article-card-profile-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+main article .article-card .article-card-profile p.article-card-profile-name {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+main article .article-card .article-card-profile p.article-card-profile-role {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #828282;
+}
+
+/*# sourceMappingURL=main.css.map */

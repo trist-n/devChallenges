@@ -1,0 +1,27 @@
+footer {
+  padding-top: 152px;
+  text-align: center;
+
+  p {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 8px 16px 24px 16px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray-2;
+
+    @include breakpoint-max(sm) {
+      border-top: 1px solid $gray-2;
+    }
+
+    a {
+      color: $gray-2;
+      transition: all, 0.5s;
+
+      &:hover {
+        color: rgba($gray, 0.25);
+      }
+    }
+  }
+}
